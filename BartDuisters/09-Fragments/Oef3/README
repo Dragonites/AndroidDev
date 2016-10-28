@@ -1,0 +1,2 @@
+Deze oefening bevat de laatste oefening van Fragments. Het belangrijkste is aanwezig: via Fragments gegevens doorgeven naar andere Fragments via Loose Coupling.
+De Fragmenten spreken elkaar nooit direct aan, maar werken altijd via de Activity.

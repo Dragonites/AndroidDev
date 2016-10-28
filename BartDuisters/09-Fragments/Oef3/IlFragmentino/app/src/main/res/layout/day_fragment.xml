@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    
+    <TextView
+        android:id="@+id/dayField"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="TEMPORARY"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/soep"
+        android:text="Soep"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:text="DUMMY SOEP"
+        android:id="@+id/soepInfo"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="normal|bold"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/dagschotel"
+        android:text="Dagschotel"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:text="DUMMY DAGSCHOTEL"
+        android:id="@+id/dagschotelInfo"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="normal|bold"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/pasta"
+        android:text="Pasta"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:text="DUMMY PASTA"
+        android:id="@+id/pastaInfo"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="normal|bold"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/vegetarisch"
+        android:text="Vegetarisch"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:text="DUMMY VEGETARISCH"
+        android:id="@+id/vegetarischInfo"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="normal|bold"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/snack"
+        android:text="Snack"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:text="DUMMY SNACK"
+        android:id="@+id/snackInfo"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="normal|bold"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/saladbar"
+        android:text="Saladbar"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:text="DUMMY SALADBAR"
+        android:id="@+id/saladbarInfo"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="normal|bold"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/dessert"
+        android:text="Dessert"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:text="DUMMY DESSERT"
+        android:id="@+id/dessertInfo"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="normal|bold"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

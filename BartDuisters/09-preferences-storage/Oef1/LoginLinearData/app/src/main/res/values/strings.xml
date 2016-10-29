@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LoginLineair</string>
+    <string name="login_information">Login information</string>
+    <string name="username_text">Username</string>
+    <string name="password_text">Password</string>
+    <string name="login">Login</string>
+</resources>

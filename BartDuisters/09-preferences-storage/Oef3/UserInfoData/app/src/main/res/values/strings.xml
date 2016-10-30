@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">User info</string>
+    <string name="user_info">User info</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+    <string name="email">E-mail</string>
+    <string name="newsletter">Newsletter</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+</resources>

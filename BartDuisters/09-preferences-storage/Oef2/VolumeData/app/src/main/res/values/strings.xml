@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Volume</string>
+    <string name="beltoon">Beltoon</string>
+    <string name="media">Media</string>
+    <string name="alarm">Alarm</string>
+    <string name="checkbox_volume">Volume van inkomende oproepen gebruiken voor meldingen</string>
+    <string name="melding">Melding</string>
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="stille_modus">Stille modus</string>
+    <string name="trillen">Trillen</string>
+    <string name="volume">Volume</string>
+</resources>

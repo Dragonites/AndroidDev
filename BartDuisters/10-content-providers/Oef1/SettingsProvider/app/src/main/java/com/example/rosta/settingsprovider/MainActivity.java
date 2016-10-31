@@ -77,8 +77,9 @@ public class MainActivity extends ListActivity {
              */
             names.add(name);
             values.add(value);
-            cursor.moveToNext();
             /** */
+
+            cursor.moveToNext();
         }
 
         /**

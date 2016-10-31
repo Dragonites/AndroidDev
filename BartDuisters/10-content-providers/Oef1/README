@@ -1,0 +1,11 @@
+MainActivity.java bevat 2 oplossingen. De oplossing met een normale ArrayAdapter staat in comments.
+Wanneer je alles van 'normale ArrayAdapter' uncomment, moet je alles van 'custom ArrayAdapter' in comments zetten!
+Wanneer je alles van 'custom ArrayAdapter' uncomment, moet je alles van 'normale ArrayAdapter' in comments zetten!
+
+Deze oefening bevat:
+- Content Resolver (gegevens ophalen uit Content Providers van Android zelf)
+- Custom ArrayAdapter
+- Custom rowlayout
+
+En als extraatje
+- Aanpassing van achtergrondkleur op basis van even of oneven rijen

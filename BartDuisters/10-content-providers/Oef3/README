@@ -1,0 +1,11 @@
+Bestanden aanmaken/openen in de volgorde:
+	- CondimentsContract.java
+	- CondimentsDBHelper.java
+	- CondimentsProvider.java
+
+Om deze te gebruiken:
+	- AndroidManifest (provider toevoegen)
+
+App voorbeeld die Content Provider gebruikt:
+	- MainActivity.java (+ layout)
+	- MySimpleArrayAdapter.java (+ rowlayout)

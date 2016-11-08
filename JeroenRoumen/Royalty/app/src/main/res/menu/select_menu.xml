@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.rosta.optionsmenu.MainActivity">
+
+    <item android:title="@string/Nederlands"
+        android:id="@+id/labelNL"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/labelEN"
+        android:title="@string/Engels"
+        app:showAsAction="always" />
+</menu>

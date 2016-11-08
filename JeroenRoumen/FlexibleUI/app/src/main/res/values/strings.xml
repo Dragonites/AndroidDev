@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Flexible UI</string>
+    <string-array name="namenLijst">
+        <item>Jan Janssen</item>
+        <item>Piet Pieters</item>
+        <item>Peter Peeters</item>
+        <item>An Liekens</item>
+    </string-array>
+</resources>

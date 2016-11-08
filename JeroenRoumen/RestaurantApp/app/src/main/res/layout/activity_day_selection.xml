@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_day_selection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.jeroen.restaurantapp.DaySelectionActivity">
+
+    <TextView
+        android:id="@+id/tekstdoos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Test"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/maandagKnop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maandag"
+        android:layout_gravity="center"
+        android:onClick="voedingDetailClick"/>
+    <Button
+        android:id="@+id/dinsdagKnop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dinsdag"
+        android:layout_gravity="center"
+        android:onClick="voedingDetailClick"/>
+    <Button
+        android:id="@+id/woensdagKnop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/woensdag"
+        android:layout_gravity="center"
+        android:onClick="voedingDetailClick"/>
+    <Button
+        android:id="@+id/donderdagKnop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/donderdag"
+        android:layout_gravity="center"
+        android:onClick="voedingDetailClick"/>
+    <Button
+        android:id="@+id/vrijdagKnop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vrijdag"
+        android:layout_gravity="center"
+        android:onClick="voedingDetailClick"/>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Royalty</string>
+    <string name="delete">delete</string>
+    <string name="Nederlands">nederlands</string>
+    <string name="Engels">engels</string>
+    <string-array name="dutch_leaders">
+        <item>Willem I</item>
+        <item>Willem II</item>
+        <item>Willem III</item>
+        <item>Wilhelmina</item>
+        <item>Juliana</item>
+        <item>Beatrix</item>
+        <item>Willem-Alexander</item>
+    </string-array>
+    <string-array name="english_leaders">
+        <item>George I</item>
+        <item>George II</item>
+        <item>George III</item>
+        <item>George IV</item>
+        <item>William IV</item>
+        <item>Victoria</item>
+    </string-array>
+</resources>

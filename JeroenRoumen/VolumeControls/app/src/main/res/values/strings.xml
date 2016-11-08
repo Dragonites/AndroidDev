@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Volume</string>
+    <string name="beltoon">Beltoon</string>
+    <string name="media">Media</string>
+    <string name="alarm">Alarm</string>
+    <string name="meldingen">Volume voor inkomende oproepen gebruiken voor meldingen</string>
+    <string name="melding">Melding</string>
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.jeroen.fragmentdemo.MainActivity">
+
+    <!--Adds a LinearLayout where buttons are placed upon-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addAButton"
+            android:text="@string/adda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addFragmentA" />
+        <Button
+            android:id="@+id/remAButton"
+            android:text="@string/rema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="removeFragmentA" />
+        <Button
+            android:id="@+id/addBButton"
+            android:text="@string/addb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addFragmentB" />
+        <Button
+            android:id="@+id/remBButton"
+            android:text="@string/remb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="removeFragmentB" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/replaceAButton"
+            android:text="@string/replace_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/replaceBButton"
+            android:text="@string/replace_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/attachAButton"
+            android:text="@string/attacha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="attachFragmentA"/>
+
+        <Button
+            android:id="@+id/detachAButton"
+            android:text="@string/detacha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="detachFragmentA"/>
+
+        <Button
+            android:id="@+id/showAButton"
+            android:text="@string/show_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showFragmentA"/>
+
+        <Button
+            android:id="@+id/hideAButton"
+            android:text="@string/hide_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="hideFragmentA"/>
+
+
+    </LinearLayout>
+
+    <!--Adds a container to the activity to where fragments can be placed
+        Notice the id, you need to reference this when loading a fragment into an activity-->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
+
+</LinearLayout>

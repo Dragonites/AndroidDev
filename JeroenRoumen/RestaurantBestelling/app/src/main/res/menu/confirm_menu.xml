@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/confirmButton"
+        android:title="Bevestigen" />
+    <item
+        android:id="@+id/cancelButton"
+        android:title="Annuleren" />
+</menu>

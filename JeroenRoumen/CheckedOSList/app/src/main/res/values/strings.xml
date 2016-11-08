@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Checked OS List</string>
+    <string-array name="osList">
+        <item>Android</item>
+        <item>Ubuntu</item>
+        <item>Arch Linux</item>
+        <item>Debian</item>
+        <item>Windows</item>
+        <item>MacOS</item>
+        <item>iOS</item>
+    </string-array>
+</resources>

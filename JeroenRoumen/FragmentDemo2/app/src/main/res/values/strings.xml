@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FragmentDemo2</string>
+    <string name="send_data">Send Data to Fragment A</string>
+    <string name="fragment_a">Fragment A</string>
+    <string name="fragment_b">Fragment B</string>
+    <string name="add_two_numbers">Add two numbers</string>
+    <string name="result">RESULT</string>
+</resources>

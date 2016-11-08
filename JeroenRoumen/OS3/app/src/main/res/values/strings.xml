@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ArrayActivity</string>
+    <string-array
+        name="osLijst">
+        <item>Android</item>
+        <item>Ubuntu</item>
+        <item>Linux Mint</item>
+        <item>Manjaro</item>
+        <item>Arch Linux</item>
+    </string-array>
+</resources>

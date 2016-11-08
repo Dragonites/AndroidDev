@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Restaurant App</string>
+    <string name="_07_11_oktober">07-11 Oktober</string>
+    <string name="_14_18_oktober">14-18 Oktober</string>
+    <string name="_21_25_oktober">21-25 Oktober</string>
+    <string name="maandag">Maandag</string>
+    <string name="dinsdag">Dinsdag</string>
+    <string name="woensdag">Woensdag</string>
+    <string name="donderdag">Donderdag</string>
+    <string name="vrijdag">Vrijdag</string>
+    <string name="soep">soep</string>
+    <string name="dagschotel">dagschotel</string>
+    <string name="pasta">pasta</string>
+    <string name="vegetarisch">vegetarisch</string>
+    <string name="snack">snack</string>
+    <string name="dessert">dessert</string>
+</resources>

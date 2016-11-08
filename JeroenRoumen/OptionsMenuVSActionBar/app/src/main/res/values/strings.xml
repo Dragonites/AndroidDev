@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OptionsMenuVSActionBar</string>
+    <string name="create">Create</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="delete2">Delete2</string>
+</resources>

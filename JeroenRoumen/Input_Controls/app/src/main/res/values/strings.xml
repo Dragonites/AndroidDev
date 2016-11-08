@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Input_Controls</string>
+    <string name="button">Button</string>
+    <string name="checkbox">ChecBbox</string>
+</resources>

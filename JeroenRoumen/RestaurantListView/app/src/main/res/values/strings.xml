@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Restaurant ListView</string>
+    <string name="week_icon">week_icon</string>
+    <string name="day_icon">day_icon</string>
+    <string-array name="weken">
+        <item>07 – 11 okt 2013</item>
+        <item>14 – 18 okt 2013</item>
+        <item>21 – 25 okt 2013</item>
+    </string-array>
+    <string-array name="dagen">
+        <item>Maandag</item>
+        <item>Dinsdag</item>
+        <item>Woensdag</item>
+        <item>Donderdag</item>
+        <item>Vrijdag</item>
+    </string-array>
+    <string name="title_activity_day">DayActivity</string>
+</resources>

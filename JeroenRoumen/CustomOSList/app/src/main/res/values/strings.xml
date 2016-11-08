@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Custom OS List</string>
+    <string-array name="osList">
+        <item>Ubuntu</item>
+        <item>Manjaro</item>
+        <item>Mac OSX</item>
+        <item>Android</item>
+        <item>iOS</item>
+        <item>Arch Linux</item>
+    </string-array>
+</resources>

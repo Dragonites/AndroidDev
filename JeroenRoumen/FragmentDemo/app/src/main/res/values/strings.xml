@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FragmentDemo</string>
+    <string name="adda">addA</string>
+    <string name="rema">remA</string>
+    <string name="addb">addB</string>
+    <string name="remb">remB</string>
+    <string name="title_activity_fragment">FragmentA</string>
+    <string name="fragmenta">Fragment A</string>
+    <string name="fragmentb">Fragment B</string>
+    <string name="attacha">attachA</string>
+    <string name="detacha">detachA</string>
+    <string name="show_a">show A</string>
+    <string name="hide_b">hide B</string>
+    <string name="replace_a">Replace A</string>
+    <string name="replace_b">Replace B</string>
+    <string name="hide_a">Hide A</string>
+</resources>

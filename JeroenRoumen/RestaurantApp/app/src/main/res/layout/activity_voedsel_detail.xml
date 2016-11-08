@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_voedsel_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="8"
+    android:layout_gravity="center"
+    android:textAlignment="center"
+    tools:context="com.example.jeroen.restaurantapp.VoedselDetailActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textDay"
+        android:textAlignment="center"
+        android:text="@string/maandag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/soep"
+        android:text="@string/soep"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDay"/>
+
+    <CheckBox
+        android:text="DUMMY SOEP"
+        android:id="@+id/soepInfo"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/soep"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/dagschotel"
+        android:text="@string/dagschotel"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/soepInfo"/>
+
+    <CheckBox
+        android:text="DUMMY DAGSCHOTEL"
+        android:id="@+id/dagschotelInfo"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dagschotel"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/pasta"
+        android:text="@string/pasta"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dagschotelInfo"/>
+
+    <CheckBox
+        android:text="DUMMY PASTA"
+        android:id="@+id/pastaInfo"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pasta"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/vegetarisch"
+        android:text="@string/vegetarisch"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pastaInfo"/>
+
+    <CheckBox
+        android:text="DUMMY VEGETARISCH"
+        android:id="@+id/vegetarischInfo"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vegetarisch"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/snack"
+        android:text="@string/snack"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vegetarischInfo"/>
+
+    <CheckBox
+        android:text="DUMMY SNACK"
+        android:id="@+id/snackInfo"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/snack"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/saladbar"
+        android:text="@string/snack"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/snackInfo"/>
+
+    <CheckBox
+        android:text="DUMMY SALADBAR"
+        android:id="@+id/saladbarInfo"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saladbar"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/dessert"
+        android:text="@string/dessert"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saladbarInfo"/>
+
+    <CheckBox
+        android:text="DUMMY DESSERT"
+        android:id="@+id/dessertInfo"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dessert"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

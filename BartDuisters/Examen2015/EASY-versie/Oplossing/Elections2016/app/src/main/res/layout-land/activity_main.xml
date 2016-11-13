@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false">
+
+    <!-- Fragment om ListFragment weer te geven -->
+    <!-- Wanneer je deze code copy/paste naar jouw project,
+         zal je android:name moeten aanpassen naar jouw project
+         en zal je ListFragment moeten aanmaken (ALT+ENTER) -->
+    <fragment android:name="com.example.rosta.elections2016.ListFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"
+        android:layout_weight="1"
+        tools:layout="@layout/list_fragment" />
+
+    <!-- Fragment om DetailFragment weer te geven -->
+    <!-- layout_weight van dit fragment is 2, hierboven 1 om een juiste verdeling te krijgen-->
+    <fragment android:name="com.example.rosta.elections2016.DetailFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container2"
+        android:layout_weight="2"
+        tools:layout="@layout/detail_fragment" />
+
+</LinearLayout>

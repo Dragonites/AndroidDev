@@ -136,7 +136,8 @@ public class DetailFragment extends Fragment {
             case "Republican Party":
                 candidatePictureField.setBackgroundColor(Color.RED);
                 break;
-            case "Democratic Party":
+                /** Democratic party i.p.v. Democratic Party door inconsistentie in aangeleverde JSON */
+            case "Democratic party":
                 candidatePictureField.setBackgroundColor(Color.BLUE);
                 break;
             default:

@@ -1,1 +1,0 @@
-Hopelijk op tijd af voor het examen. Kom later terug.

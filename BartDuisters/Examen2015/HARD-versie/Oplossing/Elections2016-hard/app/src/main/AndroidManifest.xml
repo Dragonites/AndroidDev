@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rosta.elections2016">
+
+    <!-- Veranderen van @mipmap/ic_launcher naar @drawable/usa_disc -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/usa_disc"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- TOEGEVOEGD, ELKE NIEUWE ACTIVITY MOET WORDEN TOEGEVOEGD AAN HET MANIFEST -->
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".SettingsActivity" />
+
+        <!-- Dit toevoegen aan het manifest van de app waar je de provider wilt gebruiken -->
+        <provider
+            android:name=".database.CandidateProvider"
+            android:authorities="com.bartduisters.candidatedatabase"
+            android:exported="false"
+            android:protectionLevel="signature"
+            android:syncable="true"/>
+    </application>
+
+</manifest>

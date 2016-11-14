@@ -1,0 +1,10 @@
+[
+  {"name":"Hillary Clinton", "party":"Democratic party", "age": 68,"votes": 14},
+  {"Martin O'Malley", "party":"Democratic party", "age": 52,"votes": 5},
+  {"Bernie Sanders", "party":"Democratic party", "age": 74,"votes": 7},
+  {"Donald Trump", "party":"Republican Party", "age": 69,"votes": 9},
+  {"Jeb Bush", "party":"Republican Party", "age": 62,"votes": 8},
+  {"Rand Paul", "party":"Republican Party", "age": 52,"votes": 7},
+  {"Bob Whitaker", "party":"AFP", "age": 52,"votes": 0},
+  {"John MacAfee", "party":"Independent", "age": 52,"votes": 1}
+]

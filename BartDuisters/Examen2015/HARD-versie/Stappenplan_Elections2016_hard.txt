@@ -1,0 +1,100 @@
+Maak een project met een 'Empty Activity'. API level 16 en backwards compatibility afgevinkt.
+
+Hieronder zie je de volgorde waarin je de bestanden moet bekijken, in de bestanden zelf
+staan comments met uitleg over wat je moet doen.
+
+Voorbereiding:
+- Copy/paste alle images naar res/drawable (Alles kleine letters, cijfers of underscore in de naam van een afbeelding!)
+- Voeg de string-arrays toe (zie res/values/strings.xml)
+	Dit gebruik ik in plaats van
+	candidates.json, strings.xml, libs/gson-2.4.jar en ElectionUtils.java
+        aangezien we het toevoegen van dependencies en het gebruiken van json niet gezien hebben.
+	(Indien je het wel wilt gebruiken, je kan de dependency toevoegen in 'Gradle Scripts/build.gradle' d.m.v.: 'compile com.google.code.gson:gson:2.4' toe te voegen 
+	 en dan op 'sync project with gradle files' te klikken', je zal ook heel wat code moeten aanpassen in mijn project om dit te doen werken..)
+
+Aangepast opstarticoon.
+- manifests/
+
+We gaan eerst de main activity voor portrait mode in orde brengen.
+- res/layout/activity_main.xml
+
+Nu zorgen we dat we een lijst kunnen weergeven in een fragment.
+- res/layout/list_fragment.xml
+
+Om te bepalen hoe de één row er uitziet, maken we een aparte row layout.
+- res/layout/row_layout.xml
+
+Zorg dat de lijst met namen, gebruikmakend van de aangepaste Adapter, ingeladen wordt.
+- java/com.*.*.projectnaam/ListFragment.java
+
+// Op dit moment heb je een aangepast icoon en werkt de lijstweergave in portrait-modus
+
+We gaan nu zorgen dat er een layout voor de detail view is.
+- res/layout/detail_fragment.xml
+
+We maken nu DetailFragment die de logica bevat om alle velden van detail_fragment.xml te vullen.
+- java/com.*.*.projectnaam/DetailFragment.java
+
+Maak een nieuwe layout voor voor de Activity die we zo dadelijk gaan maken. Hierin komt ons DetailFragment.
+- res/layout/detail_activity.xml
+
+Maak een Interface (listener) waardoor je zeker bent dat de Activity de methode implementeert die nodig is om de gegevens door te geven.
+Deze wordt door DetailActivity en MainActivity geïmplementeerd om data van fragment naar fragment door te geven.
+- java/com.*.*.projectnaam/DetailListener
+
+// Je moet nu naar MainActivity gaan en de code toevoegen waar (DetailListener) bijstaat.
+// Je moet nu naar DetailActivity gaan en de code toevoegen waar (DetailListener) bijstaat.
+Maak een nieuwe activity om DetailFragment weer te geven in portrait-modes, genaamd DetailActivity
+VERGEET NIET OM DEZE OOK AAN HET MANIFEST TOE TE VOEGEN
+- java/com.*.*.projectnaam/DetailActivity.java
+
+Vul alle code aan om de vote-knop te doen werken, alle code met (Vote Button) in de comments
+- res/layout/detail_fragment.xml (onClick)
+- java/com.*.*.projectnaam/DetailActivity.java (voteButtonClicked)
+- java/com.*.*.projectnaam/DetailFragment.java (upVote)
+
+
+// Om te zorgen dat het in landscape ook werkt, voeg je een nieuwe directory toe aan res/, genaamd 'layout-land', -land zorgt ervoor dat de layouts in deze directory geopend worden in landscape-modus.
+// Om deze nieuwe directory zichtbaar te kijken zet je linksboven de scope van 'Android' naar 'Project'
+- res/layout-land/activity_main.xml
+- java/com.*.*.projectnaam/MainActivity.java
+- java/com.*.*.projectnaam/MainActivity.java (voteButtonClicked)
+
+// Maken van Option Menu, voeg map 'menu' toe aan 'res/'
+- res/menu/option_menu.xml
+- voeg onCreateOptionsMenu toe aan MainActivity
+- voeg onOptionItemSelected toe aan MainActivity
+
+// Layout voor SettingsActivity (wordt hierna aangemaakt)
+- res/layout/settings_activity.xml
+
+// Maken van SettingsActivity (extends Activity), TOEVOEGEN AAN MANIFEST
+// Hier zit code in voor SharedPreferences (settings opslaan)
+- java/com.*.*.projectnaam/SettingsActivity.java
+
+// *** DIT IS NIEUW IN HARD-VERSIE ***
+// JSON
+- Gradle Scripts/build.gradle (Module:app) // LET OP: er zijn 2 build.gradle scripts, open de correcte (Module:app)
+- Wis alle string-arrays in res/value/strings.xml BEHALVE election_types (de spinner list) NIET
+- Voeg de aangeleverde code <string name="candidates"> toe aan res/value/strings.xml
+
+// Voeg Candidate.java en ElectionUtils.java toe aan een nieuwe package 'Candidate'
+- java/com.*.*.projectnaam/Candidate/Candidate.java
+- java/com.*.*.projectnaam/Candidate/ElectionUtils.java
+
+// Voeg ElectionContract.java toe aan een nieuwe package 'database'
+// !!! kleine letter, anders problemen bij het toevoegen van Provider aan manifest !!!
+- java/com.*.*.projectnaam/Database/ElectionContract.java // Ik heb extra code toegevoegd aan dit bestand!
+
+// Maak een DBHelper om database aan te maken (!!! seed hier geen data, dit werd me geadviseerd, maar zorgt voor een recursive call naar getDatabase --> ERROR !!!) // Seed in ListFragment (zie refactor onderaan)
+- java/com.*.*.projectnaam/Database/CandidateDBHelper
+
+// Maak een Provider om de database queries toe te sturen
+- java/com.*.*.projectnaam/Database/CandidateProvider
+- MANIFEST --> toevoegen van provider, anders werkt het niet!
+
+// Refactor van onderstaande bestanden om ContentProvider te gebruiken
+// In comments staat wat er verandert is.
+- java/com.*.*.projectnaam/MySimpleArrayAdapter.java
+- java/com.*.*.projectnaam/ListFragment.java
+- java/com.*.*.projectnaam/DetailFragment.java
